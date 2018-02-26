@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Beats</title>
+    <link rel="stylesheet" type="text/css" href="./css/beatbox.css">
+    <link rel="stylesheet" type="text/css" href="./css/slider.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <script type="text/javascript" src="./js/bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/e0278f49db.js"></script>
+  </head>
+  <body>
+    <body>
+      <div class="page-container">
+          <div class="el">
+            <h1 class="page-title">beat buddies</h1>
+        </div>
+        <div class="beatbox">
+        </div>
+        <section class="beats">
+          <audio id="hey" src="./assets/sounds/hey.wav" type="audio/wav"></audio>
+          <audio id="crash" src="./assets/sounds/crash.wav" type="audio/wav"></audio>
+          <audio id="cowbell" src="./assets/sounds/cowbell.wav" type="audio/wav"></audio>
+          <audio id="maraca" src="./assets/sounds/maraca.wav" type="audio/wav"></audio>
+          <audio id="hat" src="./assets/sounds/hh.wav" type="audio/wav"></audio>
+          <audio id="clap" src="./assets/sounds/clap.wav" type="audio/wav"></audio>
+          <audio id="snare" src="./assets/sounds/snare.wav" type="audio/wav"></audio>
+          <audio id="kick" src="./assets/sounds/kick.wav" type="audio/wav"></audio>
+        </section>
+        <aside class="controller">
+          <i id="reset" class="fa fa-repeat" aria-hidden="true"></i>
+          <i id="pause" class="fa fa-pause" aria-hidden="true"></i>
+          <i id="play" class="fa fa-play" aria-hidden="true"></i>
+          <i id="volume" class="fa fa-volume-up" aria-hidden="true"></i>
+          <i id="mute" class="fa fa-bell-slash" aria-hidden="true"></i>
+        </aside>
+        <label class="tempo" for="tempo">Tempo <div id="tempo-value"></div>
+          <input id="tempo" type="range" max="950" min="200" value="575"></input>
+        </label>
+      </div>
+    </body>
+  </body>
+</html>
